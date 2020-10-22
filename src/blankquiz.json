@@ -1,0 +1,18 @@
+{
+    "id": null,
+    "question": null,
+    "type": null,
+    "multiSelect": false,
+    "options": [
+      {
+        "body": null,
+        "sequence": 1,
+        "answer": false
+      },
+      {
+        "body": null,
+        "sequence": 2,
+        "answer": false
+      }
+    ]
+  }

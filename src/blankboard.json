@@ -1,0 +1,22 @@
+{
+  "id": null,
+  "question": null,
+  "type": null,
+  "multiSelect": false,
+  "characterLimited": false,
+  "Percentage": false,
+  "sequence": null,
+  "Stars": 5,
+  "textLimit": 240,
+  "wordCount": 1,
+  "options": [
+    {
+      "body": null,
+      "sequence": 1
+    },
+    {
+      "body": null,
+      "sequence": 2
+    }
+  ]
+}
