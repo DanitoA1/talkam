@@ -1,0 +1,212 @@
+{
+  "Title":"Self Survey",
+  "Caption":"Just a sample self survey, your honest feedback will be appreciated",
+  "questionsList":[
+    {
+      "question":{
+        "id":"be63c9f7-5e51-da71-ebd3-e21aa07632e0",
+        "question":null,
+        "type":"BOOLEAN",
+        "multiSelect":false,
+        "characterLimited":false,
+        "Percentage":false,
+        "sequence":null,
+        "Stars":5,
+        "textLimit":240,
+        "wordCount":1,
+        "options":[
+          {
+            "body":"Option 1",
+            "sequence":1
+          },
+          {
+            "body":"Option 2",
+            "sequence":2
+          }
+        ],
+        "body":"This is an A or B type of question"
+      },
+      "operation":"save"
+    },
+    {
+      "question":{
+        "id":"5f623169-e60e-14c7-9daf-fb99730435b0",
+        "question":null,
+        "type":"WORD_COUNT",
+        "multiSelect":false,
+        "characterLimited":false,
+        "Percentage":false,
+        "sequence":null,
+        "Stars":5,
+        "textLimit":240,
+        "wordCount":1,
+        "options":[
+          {
+            "body":null,
+            "sequence":1
+          },
+          {
+            "body":null,
+            "sequence":2
+          }
+        ],
+        "body":"This  is a word count question type"
+      },
+      "operation":"save"
+    },
+    {
+      "question":{
+        "id":"6172943b-e15c-0e10-6317-ec45f07f6a0c",
+        "question":null,
+        "type":"SINGLE_CHOICE",
+        "multiSelect":false,
+        "characterLimited":false,
+        "Percentage":false,
+        "sequence":null,
+        "Stars":5,
+        "textLimit":240,
+        "wordCount":1,
+        "options":[
+          {
+            "body":"Option 1",
+            "sequence":1
+          },
+          {
+            "body":"Option 2",
+            "sequence":2
+          },
+          {
+            "body":"Option 3",
+            "sequence":3,
+            "nextQuestion":null,
+            "imageUrl":null
+          },
+          {
+            "body":"Option 4",
+            "sequence":4,
+            "nextQuestion":null,
+            "imageUrl":null
+          }
+        ],
+        "body":"This is a single choice kind of question"
+      },
+      "operation":"save"
+    },
+    {
+      "question":{
+        "id":"02504878-9b4f-fe7a-2bf9-81f75d7da171",
+        "question":null,
+        "type":"MULTI_CHOICE",
+        "multiSelect":false,
+        "characterLimited":false,
+        "Percentage":false,
+        "sequence":null,
+        "Stars":5,
+        "textLimit":240,
+        "wordCount":1,
+        "options":[
+          {
+            "body":"Option 1",
+            "sequence":1
+          },
+          {
+            "body":"Option 2",
+            "sequence":2
+          },
+          {
+            "body":"Option 3",
+            "sequence":3,
+            "nextQuestion":null,
+            "imageUrl":null
+          },
+          {
+            "body":"Option 4",
+            "sequence":4,
+            "nextQuestion":null,
+            "imageUrl":null
+          }
+        ],
+        "body":"This is a multiple choice kind of question"
+      },
+      "operation":"save"
+    },
+    {
+      "question":{
+        "id":"02d2d91c-06a7-c0cd-36c2-644a8ccdae42",
+        "question":null,
+        "type":"RATING",
+        "multiSelect":false,
+        "characterLimited":false,
+        "Percentage":false,
+        "sequence":null,
+        "Stars":5,
+        "textLimit":240,
+        "wordCount":1,
+        "options":[
+          {
+            "body":null,
+            "sequence":1
+          },
+          {
+            "body":null,
+            "sequence":2
+          }
+        ],
+        "body":"This is a five star rating kind of question "
+      },
+      "operation":"save"
+    },
+    {
+      "question":{
+        "id":"63951663-3224-3ced-8977-0880700272e6",
+        "question":null,
+        "type":"SCALE",
+        "multiSelect":false,
+        "characterLimited":false,
+        "Percentage":0,
+        "sequence":null,
+        "Stars":5,
+        "textLimit":240,
+        "wordCount":1,
+        "options":[
+          {
+            "body":null,
+            "sequence":1
+          },
+          {
+            "body":null,
+            "sequence":2
+          }
+        ],
+        "body":"This is a scale kind of question"
+      },
+      "operation":"save"
+    },
+    {
+      "question":{
+        "id":"213643fd-ede2-a24e-c963-26513303ce3e",
+        "question":null,
+        "type":"TEXT",
+        "multiSelect":false,
+        "characterLimited":true,
+        "Percentage":false,
+        "sequence":null,
+        "Stars":5,
+        "textLimit":240,
+        "wordCount":1,
+        "options":[
+          {
+            "body":null,
+            "sequence":1
+          },
+          {
+            "body":null,
+            "sequence":2
+          }
+        ],
+        "body":"This is a text kind of question"
+      },
+      "operation":"save"
+    }
+  ]
+}

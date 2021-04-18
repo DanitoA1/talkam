@@ -1,0 +1,40 @@
+<template>
+  <div>
+    <v-row
+      align="center"
+      justify="center"
+    >
+      <v-col
+        cols="6"
+      >
+        <v-img
+          class="mx-4"
+          src="/img/SVG/login.svg"
+          contain
+          width="100%"
+        ></v-img>
+      </v-col>
+      <v-col
+        cols="6"
+      >
+        <v-card
+          class="mx-10"
+          elevation="8"
+          rounded="xl"
+        >
+          <div
+            class="mx-auto"
+          >
+            <img
+              class="my-8 ml-6"
+              height="80"
+              width="180"
+              src="/img/SVG/BQLogo.svg"
+              alt="logo"
+            />
+          </div>
+        </v-card>
+      </v-col>
+    </v-row>
+  </div>
+</template>
