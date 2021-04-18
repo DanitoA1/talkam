@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <template>
   <div>
     <div class="box">
@@ -113,13 +114,78 @@
         </v-btn>
       </div>
     </div>
+=======
+<!-- eslint-disable -->
+<template>
+  <div>
+    <v-hover>
+      <template v-slot="{ hover }">
+        <v-app-bar
+          color="deep-purple"
+          fixed
+          dense
+          collapse
+          :elevation="hover ? 24 : 6"
+          elevate-on-scroll
+          dark
+        >
+          <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
+        </v-app-bar>
+      </template>
+    </v-hover>
+    <v-navigation-drawer
+      v-model="drawer"
+      fixed
+      temporary
+      class="mt-12"
+    >
+      <v-list
+        nav
+        dense
+      >
+        <v-list-item-group
+          v-model="group"
+          active-class="deep-purple--text text--accent-4"
+        >
+          <v-list-item to="/">
+            <v-list-item-icon>
+              <v-icon class="icon-color">mdi-home</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>Home</v-list-item-title>
+          </v-list-item>
+
+          <v-list-item
+            @click.stop="signUpModal = true"
+          >
+            <v-list-item-icon>
+              <v-icon>mdi-login</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>Get Started</v-list-item-title>
+          </v-list-item>
+
+          <v-list-item
+            @click.stop="loginModal = true"
+          >
+            <v-list-item-icon>
+              <v-icon>mdi-account</v-icon>
+            </v-list-item-icon>
+            <v-list-item-title>Login</v-list-item-title>
+          </v-list-item>
+
+        </v-list-item-group>
+      </v-list>
+    </v-navigation-drawer>
+>>>>>>> 690145503035756665fc8c4b955a6420cea10c02
     <v-dialog
       v-model="signUpModal"
       max-width="400"
     >
       <v-card
         rounded="t-xl"
+<<<<<<< HEAD
         min-height="200px"
+=======
+>>>>>>> 690145503035756665fc8c4b955a6420cea10c02
       >
         <v-toolbar
           color="deep-purple"
@@ -133,7 +199,10 @@
           </v-card-title>
         </v-toolbar>
         <v-container
+<<<<<<< HEAD
           v-if="loader == false"
+=======
+>>>>>>> 690145503035756665fc8c4b955a6420cea10c02
           class="mt-4"
         >
           <v-text-field
@@ -197,6 +266,7 @@
             </p>
           </div>
         </v-container>
+<<<<<<< HEAD
         <v-container
           v-else
           class="text-center"
@@ -208,6 +278,8 @@
             size="50"
           ></v-progress-circular>
         </v-container>
+=======
+>>>>>>> 690145503035756665fc8c4b955a6420cea10c02
       </v-card>
     </v-dialog>
     <v-dialog
@@ -229,7 +301,10 @@
           </v-card-title>
         </v-toolbar>
         <v-container
+<<<<<<< HEAD
           v-if="loader == false"
+=======
+>>>>>>> 690145503035756665fc8c4b955a6420cea10c02
           class="mt-4"
         >
           <v-text-field
@@ -288,6 +363,7 @@
             </p>
           </div>
         </v-container>
+<<<<<<< HEAD
         <v-container
           v-else
           class="text-center"
@@ -299,6 +375,8 @@
             size="50"
           ></v-progress-circular>
         </v-container>
+=======
+>>>>>>> 690145503035756665fc8c4b955a6420cea10c02
       </v-card>
     </v-dialog>
     <v-dialog
@@ -320,7 +398,10 @@
           </v-card-title>
         </v-toolbar>
         <v-container
+<<<<<<< HEAD
           v-if="loader == false"
+=======
+>>>>>>> 690145503035756665fc8c4b955a6420cea10c02
           class="mt-4"
         >
           <div
@@ -395,6 +476,7 @@
             </p>
           </div>
         </v-container>
+<<<<<<< HEAD
         <v-container
           v-else
           class="text-center"
@@ -863,16 +945,28 @@
         </v-card-text>
       </v-card>
     </v-footer>
+=======
+      </v-card>
+    </v-dialog>
+    <HomeComponent />
+>>>>>>> 690145503035756665fc8c4b955a6420cea10c02
   </div>
 </template>
 
 <script>
+<<<<<<< HEAD
 import headerCmp from '@/components/headerCmp.vue'
 import { auth } from '@/firebase'
+=======
+// @ is an alias to /src
+import HomeComponent from '@/components/HomeComponent.vue';
+import { auth } from '@/firebase';
+>>>>>>> 690145503035756665fc8c4b955a6420cea10c02
 
 export default {
   name: 'Home',
   components: {
+<<<<<<< HEAD
     headerCmp
   },
   data: () => ({
@@ -883,6 +977,11 @@ export default {
       'mdi-instagram'
     ],
     loader: false,
+=======
+    HomeComponent,
+  },
+  data: () => ({
+>>>>>>> 690145503035756665fc8c4b955a6420cea10c02
     drawer: false,
     signUpModal: false,
     loginModal: false,
@@ -891,11 +990,16 @@ export default {
     show1: false,
     loginData: {
       email: '',
+<<<<<<< HEAD
       password: ''
+=======
+      password: '',
+>>>>>>> 690145503035756665fc8c4b955a6420cea10c02
     },
     signUpData: {
       email: '',
       password: '',
+<<<<<<< HEAD
       name: ''
     },
     reset: {
@@ -1052,3 +1156,54 @@ export default {
     max-width: 600px;
   }
 </style>
+=======
+      name: '',
+    },
+    reset: {
+      email: '',
+    },
+    errMsg: '',
+  }),
+  methods: {
+    openLogin() {
+      this.signUpModal = false;
+      this.passwordResetModal = false;
+      this.loginModal = true;
+    },
+    openSignUp() {
+      this.loginModal = false;
+      this.passwordResetModal = false;
+      this.signUpModal = true;
+    },
+    openReset() {
+      this.signUpModal = false;
+      this.loginModal = false;
+      this.passwordResetModal = true;
+    },
+    login() {
+      this.$store.dispatch('login', {
+        email: this.loginData.email,
+        password: this.loginData.password,
+      });
+    },
+    signup() {
+      this.$store.dispatch('signup', {
+        email: this.signUpData.email,
+        password: this.signUpData.password,
+        name: this.signUpData.name,
+      });
+    },
+    async resetPassword() {
+      this.errorMsg = '';
+
+      try {
+        await auth.sendPasswordResetEmail(this.reset.email);
+        this.resetSuccess = true;
+      } catch (err) {
+        this.errorMsg = err.message;
+      }
+    },
+  },
+};
+</script>
+>>>>>>> 690145503035756665fc8c4b955a6420cea10c02
