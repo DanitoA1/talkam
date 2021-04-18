@@ -11,26 +11,18 @@
           elevation="15"
           class="text-center mx-4"
           shaped
-<<<<<<< HEAD
           to="/user/board"
-=======
->>>>>>> 690145503035756665fc8c4b955a6420cea10c02
         >
           <v-card-title
             class="justify-center"
           >
-<<<<<<< HEAD
             Feedback Summary
-=======
-              Feedback Summary
->>>>>>> 690145503035756665fc8c4b955a6420cea10c02
           </v-card-title>
           <div>
             <v-row no-gutters>
               <v-col cols="8" class="mx-auto">
                 <v-row no-gutters>
                   <v-col cols="auto" class="mr-auto">
-<<<<<<< HEAD
                     <v-card-text
                       v-if="boards.length < 2"
                       class="font-weight-bold"
@@ -43,9 +35,6 @@
                     >
                       Boards
                     </v-card-text>
-=======
-                    <v-card-text class="font-weight-bold">Board(s)</v-card-text>
->>>>>>> 690145503035756665fc8c4b955a6420cea10c02
                   </v-col>
                   <v-col cols="auto">
                     <v-chip
@@ -56,11 +45,7 @@
                       <v-avatar
                         color="orange darken-4"
                       >
-<<<<<<< HEAD
                         {{ boards.length }}
-=======
-                        0
->>>>>>> 690145503035756665fc8c4b955a6420cea10c02
                       </v-avatar>
                     </v-chip>
                   </v-col>
@@ -91,11 +76,7 @@
             </v-row>
           </div>
           <v-card-text>
-<<<<<<< HEAD
             You currently have {{ boards.length }} feedback board(s) and 0 responses
-=======
-              You currently have 0 feedback board(s) and 0 responses
->>>>>>> 690145503035756665fc8c4b955a6420cea10c02
           </v-card-text>
         </v-card>
       </v-col>
@@ -108,26 +89,18 @@
           elevation="15"
           class="text-center mx-4"
           shaped
-<<<<<<< HEAD
           to="/user/quiz"
-=======
->>>>>>> 690145503035756665fc8c4b955a6420cea10c02
         >
           <v-card-title
             class="justify-center"
           >
-<<<<<<< HEAD
             Quiz Summary
-=======
-              Quiz Summary
->>>>>>> 690145503035756665fc8c4b955a6420cea10c02
           </v-card-title>
           <div>
             <v-row no-gutters>
               <v-col cols="8" class="mx-auto">
                 <v-row no-gutters>
                   <v-col cols="auto" class="mr-auto">
-<<<<<<< HEAD
                     <v-card-text
                       v-if="quizzes.length < 2"
                       class="font-weight-bold"
@@ -140,9 +113,6 @@
                     >
                       Quizzes
                     </v-card-text>
-=======
-                    <v-card-text class="font-weight-bold">Quiz(zes)</v-card-text>
->>>>>>> 690145503035756665fc8c4b955a6420cea10c02
                   </v-col>
                   <v-col cols="auto">
                     <v-chip
@@ -153,11 +123,7 @@
                       <v-avatar
                         color="orange darken-4"
                       >
-<<<<<<< HEAD
                         {{ quizzes.length }}
-=======
-                        0
->>>>>>> 690145503035756665fc8c4b955a6420cea10c02
                       </v-avatar>
                     </v-chip>
                   </v-col>
@@ -188,11 +154,7 @@
             </v-row>
           </div>
           <v-card-text>
-<<<<<<< HEAD
             You currently have {{ quizzes.length }} quiz(zes) and 0 entries
-=======
-              You currently have 0 quiz(zes) and 0 entries
->>>>>>> 690145503035756665fc8c4b955a6420cea10c02
           </v-card-text>
         </v-card>
       </v-col>
@@ -204,7 +166,6 @@
       >
         <p
           class="text-center h3 font-weight-bold"
-<<<<<<< HEAD
         >Recent Boards</p>
         <v-divider></v-divider>
         <div
@@ -344,17 +305,6 @@
             to="/user/board/create"
             dark
           ><v-icon color="success">mdi-plus</v-icon>Add New Board</v-btn>
-=======
-        >Boards</p>
-        <v-divider></v-divider>
-        <p class="text-center body mt-3">You've not opened any feedback board yet!!</p>
-        <div class="text-center">
-          <v-btn
-            color="success"
-            rounded
-            to="/user/board/create"
-          ><v-icon dark>mdi-plus</v-icon>Add New Board</v-btn>
->>>>>>> 690145503035756665fc8c4b955a6420cea10c02
         </div>
       </v-col>
 
@@ -364,7 +314,6 @@
       >
         <p
           class="text-center h3 font-weight-bold"
-<<<<<<< HEAD
         >Recent Quizzes</p>
         <v-divider></v-divider>
         <div
@@ -503,17 +452,6 @@
             to="/user/quiz/create"
             dark
           ><v-icon color="success">mdi-plus</v-icon>Add New Quiz</v-btn>
-=======
-        >Quizzes</p>
-        <v-divider></v-divider>
-        <p class="text-center body mt-3">You've not created any quiz yet!!</p>
-        <div class="text-center">
-          <v-btn
-            color="success"
-            rounded
-            to="/user/quiz/create"
-          ><v-icon dark>mdi-plus</v-icon>Add New Quiz</v-btn>
->>>>>>> 690145503035756665fc8c4b955a6420cea10c02
         </div>
       </v-col>
     </v-row>
@@ -521,7 +459,6 @@
 </template>
 
 <script>
-<<<<<<< HEAD
 import { boardsCollection, quizCollection } from '@/firebase'
 import { mapState } from 'vuex'
 
@@ -575,9 +512,4 @@ export default {
     }
   }
 }
-=======
-export default {
-  name: 'Overview',
-};
->>>>>>> 690145503035756665fc8c4b955a6420cea10c02
 </script>
